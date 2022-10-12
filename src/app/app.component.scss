@@ -1,0 +1,25 @@
+header {
+  text-align: center;
+  background: #33B5E5;
+  color: #fff;
+  padding: 5px;
+
+}
+
+a {
+  color: #ffffff;
+  padding: 0px 10px;
+  text-decoration: none;
+
+  &:hover{
+    text-decoration:underline;
+
+
+  }
+
+  img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+  }
+}

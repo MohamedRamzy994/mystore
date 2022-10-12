@@ -1,0 +1,7 @@
+<!-- using child component called productitem inside components folder in the root and send it input property called product  -->
+<div class="product-index">
+  <app-productitem *ngFor="let item of allProducts" [product]="item"></app-productitem>
+
+</div>
+
+
