@@ -10,6 +10,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 import { CartlistComponent } from './cartlist/cartlist.component';
 import { ConfirmorderComponent } from './confirmorder/confirmorder.component';
+import { CartitemComponent } from './components/cartitem/cartitem.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ConfirmorderComponent } from './confirmorder/confirmorder.component';
     ProductitemComponent,
     ProductdetailsComponent,
     CartlistComponent,
-    ConfirmorderComponent
+    ConfirmorderComponent,
+    CartitemComponent
   ],
   imports: [
     BrowserModule,

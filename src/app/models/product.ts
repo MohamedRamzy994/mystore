@@ -2,13 +2,13 @@
 // this model for product with all properties
 export interface Product {
 
-  id: number,
-  name: string,
-  price: number,
-  url: string
-  description: string,
-  amount:number,
-  cart:boolean
+  id?: number,
+  name?: string,
+  price?: number,
+  url?: string
+  description?: string,
+  amount?:number,
+  cart?:boolean
 
 }
 
@@ -16,8 +16,8 @@ export interface Product {
 
 export interface CustomerInfo{
 
-  fullname:string,
-  address:string,
-  creditcard:string
+  fullname?:string,
+  address?:string,
+  creditcard?:string
 
 }

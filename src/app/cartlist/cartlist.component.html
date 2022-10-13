@@ -7,16 +7,9 @@
 
   <div class="cart-items">
 
-    <div class="cart-item" *ngFor="let item of cartItems">
-      <img class="product-image" alt="Product Image" [src]="item.url" />
+    <app-cartitem class="cart-item" *ngFor="let item of cartItems" [cartitem]="item" (GetTotal)="getTotal($event)">
 
-      <div class="cart-item-details">
-
-        <h3>{{item.name}}</h3>
-        <h5>{{item.price|currency}}</h5>
-          <span>Amount</span> <input type="number" title="Quantity"  class="select-input" min="0" [(ngModel)]="item.amount" (ngModelChange)="getTotal()"/>
-       </div>
-      </div>
+    </app-cartitem>
 
       <h3><span>Totals:</span> {{total|currency}}</h3>
 

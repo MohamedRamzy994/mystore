@@ -1,0 +1,9 @@
+
+  <img class="product-image" alt="Product Image" [src]="cartitem.url" />
+
+  <div class="cart-item-details">
+
+    <h3>{{cartitem.name}}</h3>
+    <h5>{{cartitem.price|currency}}</h5>
+      <span>Amount</span> <input type="number" title="Quantity"  class="select-input" min="0" [(ngModel)]="cartitem.amount" (ngModelChange)="getTotal()"/>
+   </div>
